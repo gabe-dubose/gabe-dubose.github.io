@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+    <html>
+        <title>Symbiotic Transition</title>
+        <body style="background-color: #eae2b7;">
+            <style>
+                body {
+                    padding-bottom: 1000px;
+                    }
+                .button-wrapper1 {text-align:center;
+                    display:inline-block; 
+                    margin-left:10%;
+                    margin-top: 100px;}
+                .button-wrapper2 {text-align:center;
+                    display:inline-block; 
+                    margin-left:15%;
+                    margin-top: 100px;}
+                .button-wrapper3 {text-align:center;
+                    display:inline-block; 
+                    margin-left:20%;
+                    margin-top: 100px;}
+                .button {
+                    background-color: transparent;
+                    border-color: transparent;
+                    padding: 0px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    transition: 0.5s;
+                    font-size: 20px;
+                    width: 100px;
+                    height: 100px;
+                    cursor: default;
+                    font-family: 'Courier New', Courier, monospace;
+                    }
+                .button {border-radius: 50%;}
+                .button:hover {
+                    background-color: #fcc0494c;
+                    opacity: 1;
+                    transform: scale(1.3) perspective(1px);
+                    }
+                ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    overflow: hidden;
+                    background-color: #f77f00;
+                    }      
+                li {
+                    float: left;
+                    }
+                  
+                li a {
+                    display: block;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                    transition: 0.4s;
+                    }      
+                li a:hover {
+                    background-color: #d62828;
+                    transform: scale(1.1) perspective(1px);
+                    }
+                .header {
+                    width: 100px;
+                    min-height: 40px;
+                    margin: auto;
+                    border: none;
+                    background-size:cover;
+                    background-position: center;
+                    }
+                .picture {
+                    position: absolute;
+                    width:900px;
+                    height: 300px;
+                    margin-left: 20%;
+                    top: 200px;
+                    transition: 0.4s;
+                }
+                .picture:hover{
+                    transform: scale(1.1) perspective(1px);
+                }
+                .picture2 {
+                    position: absolute;
+                    width:900px;
+                    height: 620px;
+                    margin-left: 20%;
+                    margin-top: 10px;
+                    transition: 0.4s;
+                }
+                .picture2:hover{
+                    transform: scale(1.1) perspective(1px);
+                }
+                .picture3 {
+                    position: absolute;
+                    width:450px;
+                    height: 420px;
+                    margin-left: 35%;
+                    margin-top: 10px;
+                    transition: 0.4s;
+                }
+                .picture3:hover{
+                    transform: scale(1.1) perspective(1px);
+                }
+                .picture4:hover{
+                    transform: scale(1.1) perspective(1px);
+                }
+                .text-box {
+                    font-size: 20px;
+                    background-color: #f7800037;
+                    color: #482500;
+                    transition: 0.4s;
+                    margin-left: 20%;
+                }
+                .text-box:hover{
+                    transform: scale(1.1) perspective(1px);
+                }
+                .head-line{
+                    font-size: 50px;
+                    margin-left: 20%;
+                    color: #f77f00;
+                }
+                .sub-head-line{
+                    font-size: 30px;
+                    margin-left: 20%;
+                    color: #f77f00;
+                }
+                .text-line{
+                    font-size: 20px;
+                    margin-left: 20%;
+                    color: #482500;
+                }
+                hr{
+                    height:1px;
+                    background-color: #f77f00;
+                    width: 900px;
+                    border: none;
+                    margin-left: 20%;
+                }
+            </style>
+            <!--Navigation bar-->
+            <nav>
+                <ul>
+                    <li><a style ="color:#ffffff;
+                                font-family: 'Arial', Helvetica, sans-serif;" 
+                                href="index.html">Home</a></li>               
+                    <li><a style ="color:#ffffff;
+                                font-family: 'Arial', Helvetica, sans-serif;" 
+                                href="research.html">Research</a></li>
+                    <li><a style = "color: #ffffff;
+                                font-family: 'Arial', Helvetica, sans-serif;"
+                                href="cv.html">CV</a></li>
+                    <li><a style = "color: #ffffff;
+                                font-family: 'Arial', Helvetica, sans-serif;"
+                                href="contact.html">Contact</a></li>
+                    <li><a style = "color: #ffffff;
+                        font-family: 'Arial', Helvetica, sans-serif;"
+                        href="https://github.com/gabe-dubose">GitHub</a></li>
+                </ul>
+            </nav>
+                <div>
+                    <p class = "head-line" style="font-family:'Arial', Helvetica, sans-serif;
+                    margin-top:20px;
+                    width: 11000px;
+                    height: 50px">
+                    &nbsp&nbsp&nbsp&nbsp&nbsp How do microbes transition to an<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp endosymbiotic lifestyle?</p>
+                </div>
+                <div>
+                    <img class = "picture" src="research-images/endosymb-pic.png">
+                </div>
+                <div>
+                    <p class = "text-box" style="font-family:'Arial', Helvetica, sans-serif;
+                    font-size: 20px;
+                    margin-top:400px;
+                    width: 900px;
+                    height: 235px">
+                    <br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp One of the major transitions in evolution was the transition to endosymbiotic life. The classic <br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp example of this is the origins of mitochondria and chloroplast, where an initial endosymbiosis<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp gave rise to the development of a new organelle. Although this was a very important transition,<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp it occurred millions of years ago, making it diffucult to study how this process initiates and<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp and progresses. However, studying nascent endosymbiotic interactions, we may be able to<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp glean insight into how this process initially occurred (and even still occurs to this day). One key<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp aspect to this transition is transmission. Here, microbes that are transmitted vertically form<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp tighter associations with their hosts, thus intertwining the fitness of both organisms.<br>
+                    </p>                    
+                </div>
+                <div>
+                    <p class = "text-box" style="font-family:'Arial', Helvetica, sans-serif;
+                    font-size: 20px;
+                    margin-top:20px;
+                    width: 900px;
+                    height: 235px">
+                    <br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp My specific work focused on identifying the transmission patterns of various bacterial symbionts<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp of <em>D.discoideum</em>. We first aimed to identified the genetic diversity of these symbionts.<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Generally, vertically transmitted symbionts undergo a genetic bottle neck upon transmission.<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp This results in 1 or 2 haplotypes sweeping through populations. Alternatively, symbionts that<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp are horizontally transmitted tend to remain genetically diverse, as they can diversify outside<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp over their host. We then aimed to identify if symbionts of the same haplotypes were present in<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp multiple social amoeba species. If a symbiont is vertically transmitted, we expected a single<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp (or a few) haplotypes distinct to each species of social amoeba.<br>
+                    </p>                    
+                </div>
+                <hr>
+                <div>
+                    <p class = "sub-head-line" style="font-family:'Arial', Helvetica, sans-serif;
+                    font-size: 30;
+                    margin-top:20px;
+                    width: 11000px;
+                    height: 50px">
+                    How diverse is <em>Paraburkholderia</em> in <em>D.discoideum</em> populations<br>
+                    and is there haplotype specificity between amoeba species?</p>
+                </div>
+                <div>
+                    <p class = "text-box" style="font-family:'Arial', Helvetica, sans-serif;
+                    font-size: 20px;
+                    margin-top:20px;
+                    width: 900px;
+                    height: 300px">
+                    <br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp To look for signs that <em>P. agricolaris</em> (the most prevalent <em>D.discoideum</em> farming symbiont)<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp was either vertically or horizontally transmitted (environmentally acquired), we examined its<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp diveristy in in natural amoeba populations. Overall, we saw a high degree of diversity, including<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp at least 10 haplotypes in <em>D. discoidem</em>, 7 of which had not been previously identified.<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp We then screened other <em>Dictyostelium</em> species (<em>D.mucoroides</em>,<em>D. giganteum</em>,<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp and <em>D. purpureum</em>), as well as other amoebae of different genera (<em>Heterostelium pallidum</em><br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp and <em>Polysphondylium pallidum</em>). We found that several <em>P.agricolaris</em> haplotypes infected<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp several different amoebae species and genera. The high degree of diversity, as well as the<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp lack of haplotype specificity indicate that <em>P. agricolaris</em> can be environmentally acquired<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp from nature. This was an interesting find because <em>Paraburkholderia</em> is also vertically transmitted.<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Perhaps this indicated an evolutionary intermediate along the transition to endosymbiosis.
+                    </p>                    
+                </div>
+                <div>
+                    <image class = "picture2" src="research-images/lepa-phylo.png">
+                </div>
+                <div>
+                    <p class = "text-line" style="font-family:'Arial', Helvetica, sans-serif;
+                    font-size: 30;
+                    margin-top:670px;
+                    width: 1100px;
+                    height: 50px">
+                    Phylogeny based on the LepA housekeeping gene showing the diversity of <em>P. agricolaris</em> haplotypes<br>
+                    in <em>D. discoidem</em> and other social amoebae populations. Boxes connected to tree tips<br>
+                    indicate that the corresponding haplotype was found in that social amoeba species</p>
+                </div>
+                <br>
+                <hr>
+                <div>
+                    <p class = "sub-head-line" style="font-family:'Arial', Helvetica, sans-serif;
+                    font-size: 30;
+                    margin-top:20px;
+                    width: 11000px;
+                    height: 50px">
+                    Do other bacteria show signs of presistent associations with<br>
+                    <em>D. discoideum</em>?</p>
+                </div>
+                <div>
+                    <p class = "text-box" style="font-family:'Arial', Helvetica, sans-serif;
+                    font-size: 20px;
+                    margin-top:20px;
+                    width: 900px;
+                    height: 300px">
+                    <br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Several symbionts have been recorded as highly prevalent in natural social amoeba populations<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp These include the members of <em>Paraburkholderia</em>, <em>Chlamydiae</em>, and <em>Amoebophilus</em> genera.<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp However, due the close interactions amoebae have with bacteria, there is ample opprotunity,<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp or rather a selective pressure, for bacteria to figure out how to evade amoeba predation and<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp transition to an endosymbiotic life. Therefore, I am seeking to identify other bacteria that form<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp a presistent association with <em>D. discoideum</em> by examining the whole bacterial microbiota.<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp There has been some indication of a few other bacteria that are able to presist after passaging,<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp a process that involves culturing amoebae and then culturing a fresh set from spores collected<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp from said initial cultures. This process greatly reduces the overall microbiota diversity, leaving<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp just a few members left that are significantly abundant. Future sequencing and culturing efforts<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp may lend insight into the identification and relevance of these bacteria.<br>
+                    </p>                    
+                </div>
+                <div>
+                    <image class = "picture3" src="research-images/microb-phylo.png">
+                </div>
+                <div>
+                    <p class = "text-line" style="font-family:'Arial', Helvetica, sans-serif;
+                    font-size: 30;
+                    margin-top:500px;
+                    width: 1100px;
+                    height: 50px">
+                    16S phylogenetic tree representing the total <em>D.discoideum</em> bacterial microbiome. Blue branches indicate<br>
+                    bacteria only present after amoeba passaging (described above). The barplot on the outside represents<br>
+                    the differential abundance of each corresponding tip, where the longer and more red the bar is, the more<br>
+                    significantly and differentially abundant that bacteria was after passaging. In other words, the few red points<br>
+                    indicate bacteria that potentially form a presistent relationship with <em>D.discoideum</em>
+                </p>
+                </div>
+        </body>
+    </html>
