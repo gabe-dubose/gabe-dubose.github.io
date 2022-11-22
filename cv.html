@@ -1,116 +1,144 @@
 <!DOCTYPE html>
-    <html>
-        <title>CV</title>
-        <body style="background-color: #eae2b7;">
-            <style>
-                body {
-                    padding-bottom: 150px;
-                    }
-                ul {
-                    list-style-type: none;
-                    margin: 0;
-                    padding: 0;
-                    overflow: hidden;
-                    background-color: #f77f00;
-                    }      
-                li {
-                    float: left;
-                    }
-                  
-                li a {
-                    display: block;
-                    color: white;
-                    text-align: center;
-                    padding: 14px 16px;
-                    text-decoration: none;
-                    transition: 0.4s;
-                    }      
-                li a:hover {
-                    background-color: #d62828;
-                    transform: scale(1.1) perspective(1px);
-                    }
-                .header {
-                    width: 100px;
-                    min-height: 40px;
-                    margin: auto;
-                    border: none;
-                    background-size:cover;
-                    background-position: center;
-                    }
-                .scroll {
-                    display: block;
-                    padding: 5px;
-                    margin-top: 5px;
-                    width: 70%;
-                    height: 100%;
-                    overflow-y: scroll;
-                    margin-left: auto;
-                    margin-right: auto;
-                    }
-                .button-wrapper {text-align:center;
-                    display:inline-block; 
-                    margin-left:45%;}
-                .button {
-                    background-color: transparent;
-                    border: none;
-                    color: #d9f2f7;
-                    margin-top: 50px;
-                    padding: 0px;
-                    text-align: center;
-                    text-decoration: none;
-                    display: inline-block;
-                    transition: 0.4s;
-                    font-size: 20px;
-                    width: 100px;
-                    height: 100px;
-                    cursor: default;
-                    font-family: 'Courier New', Courier, monospace;
-                    }
-                .button {border-radius: 50%;}
-                .button:hover {
-                    background-color: #fcc0494c;
-                    transform: scale(1.3) perspective(1px);
-                    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-                    opacity: 1;
-                    }
-            </style>
-            <!--Navigation bar-->
-            <nav>
-                <ul>
-                    <li><a style ="color:#ffffff;
-                                font-family: 'Arial', Helvetica, sans-serif;" 
-                                href="index.html">Home</a></li>               
-                    <li><a style ="color:#ffffff;
-                                font-family: 'Arial', Helvetica, sans-serif;" 
-                                href="research.html">Research</a></li>
-                    <li><a style = "color: #ffffff;
-                                font-family: 'Arial', Helvetica, sans-serif;"
-                                href="cv.html">CV</a></li>
-                    <li><a style = "color: #ffffff;
-                                font-family: 'Arial', Helvetica, sans-serif;"
-                                href="contact.html">Contact</a></li>
-                    <li><a style = "color: #ffffff;
-                        font-family: 'Arial', Helvetica, sans-serif;"
-                        href="https://github.com/gabe-dubose">GitHub</a></li>
-                </ul>
-            </nav>
-                <p style="color:#ffffffaa; position: relative; margin-left: 71.5%; margin-top: 15px;">Last updated on 2022-07-13</p>
-                <div class="scroll">
-                    <embed src="Gabe-DuBose-CV.pdf#toolbar=0&navpanes=0" type="application/pdf" width="100%"
-                    height="600px" />
-                </div>
-                <div class="button-wrapper">
-                    <button class="button button1">
-                        <a href="Gabe-DuBose-CV.pdf" download="Gabe-DuBose-CV.pdf">
-                            <img src="icons/download-orange.png" width="50";
-                            height="50";>
-                        </a>
-                    </button>
-                    <p style="color:#f77f00;
-                            font-family:'Arial', Helvetica, sans-serif;
-                            font-size: 20px;">
-                        Download</p>
-                </div>
-        </body>
+<html>
+    <!--Import styling-->
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-    </html>
+    <style>
+        html {
+            background-color: #1a2a32;
+            padding-bottom: 100px;
+        }
+        
+        body {
+            font-family: "Andale Mono", AndaleMono, monospace;  
+        }
+
+        header {
+            max-width: 750px;
+            margin: 0 auto;
+            position: relative;
+            background-color: #1a2a32;
+        }
+
+    </style>
+    
+    <!--user tag-->
+    <div class="mainText" style="padding-top:75px;">
+        <span class="guest">guest</span><span class="at">@</span><span class="website">gabe-dubose.github.io:~$</span>&nbsp;<span>navigaiton-bar</span>
+    </div>
+    <!--Navigation bar-->
+    <div class="navoption">--</div>
+    <div class="navoption"><a href="index.html">Home</a></div>
+    <div class="navoption"><a href="research.html#research">Research</a></div>
+    <div class="navoption"><a href="cv.html#cv">>Curriculum Vitae</a></div>
+    <div class="navoption"><a href="https://github.com/gabe-dubose" target="_blank">GitHub</a></div>
+    <div class="navoption"><a href="contact.html#contact">Contact</a></div>
+
+    <!--user tag-->
+    <div class="mainText" style="padding-top:75px;" id="cv">
+        <span class="guest">guest</span><span class="at">@</span><span class="website">gabe-dubose.github.io:~$</span>&nbsp;<span>curriculum-vitae</span>
+    </div>
+    <!--CV info-->
+    <div class="navoption">--</div>
+    <div class="navoption"><a href="gabe-dubose-cv.pdf" download="gabe-dubose-cv.pdf" target="_blank">Download CV</a></div>
+    <div class="navoption">--</div>
+    <div class="navoption">Gabe DuBose</div>
+    <div class="navoption">Graduate Student, Bioinformtics</div>
+    <div class="navoption">Georgia Institute of Technology</div>
+    <div class="navoption">--</div>
+    <div class="navoption">Education:</div>
+    <div class="navoption">--</div>
+    <div class="navoption">M.S. in Bioinformatics, Georgia Institute of Technology, 2022</div>
+    <div class="navoption">B.S. in Biology, University of Central Arkansas, 2021</div>
+    <div class="navoption">--</div>
+    <div class="navoption">Research Positions:</div>
+    <div class="navoption">--</div>
+    <div class="navoption">Georgia Institute of Technology, 2022-Present</div>
+    <div class="navoption">Principle Investigator: Dr. William Ratcliff</div>
+    <div class="navoption">Synopsis: In the Ratcliff lab, I am focusing on developing new bioinformatic and statistical approaches to analyze variants in population genomic data. 
+        Recent work has shown that many types of variants that were presumed neutral can have large effects. My focus has been developing statistical 
+        models that can account for this variability of mutational effects, and to develop accompanying bioinformatic tools that allow others to implement 
+        these approaches as well. My work in the Ratcliff lab has primairly focused on using yeasts (S. cerevisiae) to develop these approaches, 
+        with the intent that they will be applicable to other organisms as well.</div>
+    <div class="navoption">--</div>
+    <div class="navoption">Georgia Institute of Technology, 2021-2022</div>
+    <div class="navoption">Principle Investigator: Dr. Kostas Konstantinidis</div>
+    <div class="navoption">Synopsis: In the Environmental Microbial Genomic Laboratory I combined transcriptomic and proteomic approaches to study the physiology of 
+        obligate halogen-respiring bacteria. These soil-dwelling bacteria grow significantly slower than other bacteria. My objective was to understand what 
+        physiological adaptations allow for this lifestyle. Additionally, such bacteria have been implied in bio-remediation efforts, as halogen pollutants pose 
+        large risks for the environment.</div>
+    <div class="navoption">--</div>
+    <div class="navoption">University of Central Arkansas, 2019-2021</div>
+    <div class="navoption">Principle Investigator: Dr.Tammy Haselkorn</div>
+    <div class="navoption">Thesis: The Ecological and Evolutionary Dynamics of Social Amoeba Microbiomes and Key Symbionts</div>
+    <div class="navoption">Synopsis: As an undergaduate student I studied the symbiotic interaction between soil dwelling amoebae and their bacterial symbioints. 
+        Specifically, I investigated the key ecological drivers of these symbiotic interactions, including how the symbioints are transmitted, their relevance to the host, 
+        and how abiotic soil factors influence the stability of the interactions. I have continued with Dr.Haselkorn to study how abiotic and biotic soil factors 
+        influence amoeba diversity.</div>
+    <div class="navoption">--</div>
+    <div class="navoption">Publications:</div> 
+    <div class="navoption"><a href="https://journals.asm.org/doi/10.1128/aem.01285-22" target="_blank">J.G. DuBose, M. Robeson, M. Hoogshagen, H. Olsen, T.S. Haselkorn. 2022. The complexities of inferring symbiont function: Paraburkholderia symbiont dynamics in social amoeba populations and its impact on the amoeba microbiome. Applied and Environmental Microbiology. doi: 10.1128/aem.01285-22</a></div>
+    <div class="navoption">--</div>
+    <div class="navoption"><a href="https://www.biorxiv.org/content/10.1101/2022.07.21.500805v1" target="_blank">Jennifer T. Pentz, Kathryn MacGillivray, J.G. DuBose, Peter L. Conlin, Emma Reinhardt, Eric Libby, William C. Ratcliff. 2021. Clonal development, not aggregation, drives the transition to multicellularity in an isogenic model system. bioRxiv. doi: 10.1101/2022.07.21.500805 - In review at eLife</a></div>
+    <div class="navoption">--</div>
+    <div class="navoption">Talks and Presentations:</div>
+    <div class="navoption">--</div>
+    <div class="navoption">Evolution, 2021, Talk: James DuBose, Tamara S. Haselkorn. The transmission and diversity of Paraburkholderia in natural D. discoideum populations and its impact on the D. discoideum microbiome.</div>
+    <div class="navoption">--</div>
+    <div class="navoption">Asilomar, 2021, Talk: James DuBose, Tamara S. Haselkorn. The Domination of Paraburkholderia in the Social Amoeba D. discoideum microbiome and its Impact on the Ecological Relevance of the Farming Symbiosis.</div>
+    <div class="navoption">--</div>
+    <div class="navoption">Arkansas INBRE, 2020, Talk: James DuBose, Tamara S. Haselkorn. The Genetic Diversity of Bacterial Symbionts in Dictyostelium discoideum Social Amoeba and Their Effect on the Amoeba Microbiome.</div>
+    <div class="navoption">--</div>
+    <div class="navoption">ASM Microbe, 2020, Poster: James DuBose, Hunter Olsen, Tamara S. Haselkorn. Prevalence and Genetic Diversity of the Burkholderia Bacterial Farming Symbionts in Dictyostelium Discoideum Social Amoeba Populations and their Effect on the Amoeba Microbiome.</div>  
+    <div class="navoption">--</div>
+    <div class="navoption">ASM South Central Branch, 2019, Poster: James DuBose, Hunter Olsen, Tamara S. Haselkorn. Long-term Prevalence Patterns of the Burkholderia Farming Symbiont in Dictyostelium discoideum Social Amoeba Populations.</div>  
+    <div class="navoption">--</div>
+    <div class="navoption">Grants and Funding Awards:</div>
+    <div class="navoption">--</div>
+    <div class="navoption">Computational Biology Graduate Research Assistantship, 2022</div>
+    <div class="navoption">Proposal: A multi-omics approach for comparing the physiological differences between slow and fast-growing bateria</div>
+    <div class="navoption">Award Ammount: $4000</div>
+    <div class="navoption">--</div>
+    <div class="navoption">UCA College of Natural Sciences and Mathematics Student Research Funding, 2021</div>
+    <div class="navoption">Proposal: The horizontal transmission of the Paraburkholderia bacterial farming symbiont and its effects on the microbiome of the social amoeba D. discoideum</div>
+    <div class="navoption">Award Ammount: $1000</div>
+    <div class="navoption">--</div>
+    <div class="navoption">Student Undergraduate Research Fellowship (SURF), 2019-2020</div>
+    <div class="navoption">Proposal: The effects of the Burkholderia bacterial symbiont on its social amoeba host’s fitness and microbiome formation</div>
+    <div class="navoption">Award Ammount: $4000</div>
+    <div class="navoption">--</div>
+    <div class="navoption">Advancement of Undergraduate Research in the Sciences (AURS), 2019</div>
+    <div class="navoption">Proposal: Ecological relevance of the amoeba farming symbiosis: the prevalence of the Burkholderia bacterial symbiont in natural populations, and its effect on the amoeba microbiome</div>
+    <div class="navoption">Award Ammount: $5000</div>
+    <div class="navoption">--</div>
+    <div class="navoption">Outreach and Volunteering:</div>
+    <div class="navoption">--</div>
+    <div class="navoption">Development of Programming Education Resources for Historically Minoritized Groups in Computing</div>
+    <div class="navoption">Mentor: Dr. Benjamin Rydal Shapiro</div>
+    <div class="navoption">Synopsis: DataWorks is a data services provider that employs people from communities that have historically 
+        had little access to computational resources and education. By hiring and educating people from these groups, DataWorks
+        hopes to broaden access to computing and foster equitable labor practices. One of the main tasks performed by DataWorks employees 
+        is retreiving and organizing information from online locations, a process known as webscraping. I have been working with DataWorks 
+        on building educational resources that will teach the employees to how to automate these tasks using Python, as opposed to manual copying and pasting.
+        The primary resource is a comprehensive introductory Python course that is specifically designed for people with no computational experience. 
+        Since webscraping is the major task performed at DataWorks, this course teaches Python through the lens of parsing webpages into tabular data.</div>
+    <div class="navoption">--</div>
+    <div class="navoption">Employment:</div>
+    <div class="navoption">--</div>
+    <div class="navoption">Georgia Institute of Technology, School of Biological Sciences, 08/2022–Present</div>
+    <div class="navoption">Position: Graduate Teaching Assistant</div>
+    <div class="navoption">--</div>
+    <div class="navoption">Georgia Institute of Technology, School of Biological Sciences: 01/2022–05/2022</div>
+    <div class="navoption">Position: Graduate Research Assistant</div>
+    <div class="navoption">--</div>
+    <div class="navoption">Arkansas Department of Health, Public Health Laboratories: 03/2021–07/2021</div>
+    <div class="navoption">Position: Laboratory Technician, Molecular Biology Unit/COVID-19 Unit</div> 
+    <div class="navoption">--</div>
+    <div class="navoption">University of Central Arkansas Tutoring Center: 08/2019–05/2021</div>
+    <div class="navoption">Position: Biology, Chemistry, and Mathematics Tutor</div> 
+    <div class="navoption">--</div>
+    <div class="navoption">University of Central Arkansas, Biology Department: 06/2020–08/2020</div>
+    <div class="navoption">Position: Research Assistant</div>  
+</html>

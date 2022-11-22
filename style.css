@@ -1,0 +1,41 @@
+/*Index body styling*/
+.mainText {
+    max-width: 750px;
+    margin: auto;
+    position: relative;
+    background-color: #1a2a32;
+    color: white; 
+    font-size: 18px;
+}
+
+.guest {
+    color: #e06c75;
+}
+.at {
+    color: aliceblue;
+}
+.website {
+    color: #facb6a;
+}
+
+/*Navigation Bar styling*/
+.navoption {
+    max-width: 750px;
+    margin: auto;
+    position: relative;
+    background-color: #1a2a32;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.navoption a {
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.navoption a:hover {
+    text-decoration: underline;
+}

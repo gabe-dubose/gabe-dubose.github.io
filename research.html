@@ -1,194 +1,55 @@
 <!DOCTYPE html>
-    <html>
-        <title>Research Home</title>
-        <body style="background-color: #eae2b7;">
-            <style>
-                body {
-                    padding-bottom: 150px;
-                    }
-                ul {
-                    list-style-type: none;
-                    margin: 0;
-                    padding: 0;
-                    overflow: hidden;
-                    background-color: #f77f00;
-                    }      
-                li {
-                    float: left;
-                    }
-                  
-                li a {
-                    display: block;
-                    color: white;
-                    text-align: center;
-                    padding: 14px 16px;
-                    text-decoration: none;
-                    transition: 0.4s;
-                    }      
-                li a:hover {
-                    background-color: #d62828;
-                    transform: scale(1.1) perspective(1px);
-                    }
-                .header {
-                    width: 100px;
-                    min-height: 40px;
-                    margin: auto;
-                    border: none;
-                    background-size:cover;
-                    background-position: center;
-                    }
-                .button-wrapper {text-align:center;
-                    position: absolute;
-                    display:inline-block; 
-                    top: 85px;
-                    left: 50%;}
-                .button {
-                    background-color: transparent;
-                    border-color: transparent;
-                    padding: 0px;
-                    text-align: center;
-                    text-decoration: none;
-                    display: inline-block;
-                    transition: 0.5s;
-                    font-size: 20px;
-                    width: 75px;
-                    height: 75px;
-                    cursor: default;
-                    font-family: 'Courier New', Courier, monospace;
-                    }
-                .button {border-radius: 50%;}
-                .button:hover {
-                    background-color: #fcc0494c;
-                    transform: scale(1.3) perspective(1px);
-                    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-                    opacity: 1;}
-                .research-pic {
-                    position: absolute;
-                    top:175px;
-                    left:5%;
-                    border-radius: 50%;
-                    }
+<html>
+    <!--Import styling-->
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <style>
 
-                .text-grow {
-                    font-size: 20px;
-                    transition: 0.4s;
-                    background-color: #f7800037;
-                    color: #f77f00;
-                    transition: 0.4s;
-                }
-                .text-grow:hover{
-                    transform: scale(1.05) perspective(1px);
-                    background-color: #f780008e;
-                    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-                    color: #ffffff;
-                }
-                a {
-                    text-decoration: none;
-                }
-            </style>
-            <!--Navigation bar-->
-            <nav>
-                <ul>
-                    <li><a style ="color:#ffffff;
-                                font-family: 'Arial', Helvetica, sans-serif;" 
-                                href="index.html">Home</a></li>               
-                    <li><a style ="color:#ffffff;
-                                font-family: 'Arial', Helvetica, sans-serif;" 
-                                href="research.html">Research</a></li>
-                    <li><a style = "color: #ffffff;
-                                font-family: 'Arial', Helvetica, sans-serif;"
-                                href="cv.html">CV</a></li>
-                    <li><a style = "color: #ffffff;
-                                font-family: 'Arial', Helvetica, sans-serif;"
-                                href="contact.html">Contact</a></li>
-                    <li><a style = "color: #ffffff;
-                        font-family: 'Arial', Helvetica, sans-serif;"
-                        href="https://github.com/gabe-dubose">GitHub</a></li>
-                </ul>
-            </nav>
+        html {
+            background-color: #1a2a32;
+            padding-bottom: 100px;
+        }
 
-                <div class="button-wrapper">
-                    <a href="https://scholar.google.com/citations?user=N1sohWsAAAAJ&hl=en">
-                    <button class="button button1">
-                        <a href="https://scholar.google.com/citations?user=N1sohWsAAAAJ&hl=en">
-                            <img src="icons/google-scholar-orange.png" width="55";
-                        height="55";>
-                        </a>
-                    </button>
-                </div>
+        body {
+            font-family: "Andale Mono", AndaleMono, monospace;  
+        }
 
-                <div>
-                    <img class = "research-pic" src="research-images/yeast-cell-pic.png"
-                        width="150px" height="150px">
-                </div>
-                
-                <div>
-                    <a href="multicell.html">
-                    <p class = "text-grow" style="font-family:'Arial', Helvetica, sans-serif;
-                    font-size: 20px;
-                    margin-top: 140px;
-                    margin-left: 20%;
-                    width: 950px">
-                    <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <strong>Evoluton of Multicellulatiry and Cell Differentiation</strong>
-                    <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp During the Summer of 2022 I will be joining the Ratcliff Lab at Geogria Tech to study
-                    <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp the origins of multicellular life and early cell differentiation. More coming soon!
-                    <br>
-                    <br>
-                    </p>
-                </a>
-                </div>
+        header {
+            max-width: 750px;
+            margin: 0 auto;
+            position: relative;
+            background-color: #1a2a32;
+        }
+    </style>
+    
+    <!--user tag-->
+    <div class="mainText" style="padding-top:75px;">
+        <span class="guest">guest</span><span class="at">@</span><span class="website">gabe-dubose.github.io:~$</span>&nbsp;<span>navigaiton-bar</span>
+    </div>
+    <!--Navigation bar-->
+    <div class="navoption">--</div>
+    <div class="navoption"><a href="index.html">Home</a></div>
+    <div class="navoption"><a href="research.html#research">>Research</a></div>
+    <div class="navoption"><a href="cv.html#cv">Curriculum Vitae</a></div>
+    <div class="navoption"><a href="https://github.com/gabe-dubose" target="_blank">GitHub</a></div>
+    <div class="navoption"><a href="contact.html#contact">Contact</a></div>
 
-                <div>
-                    <a href="parasitism-mutualism-spectrum.html">
-                    <p class = "text-grow" style="font-family:'Arial', Helvetica, sans-serif;
-                    font-size: 20px;
-                    margin-top: 75px;
-                    margin-left: 20%;
-                    width: 950px">
-                    <br>
-                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <strong>How do symbiotic relationships shift along the parasitism-mutualism spectrum?</strong><br>
-                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Symbiotic interactions range forom parasitim to mutualism, and where a symbiont falls on this<br>
-                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp spectrum can change depending on a variety of factors governed by the host, symbiont, and the<br>
-                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp environment.<br>
-                    <br>
-                    </p>
-                    </a>
-                </div>
+    <!--user tag-->
+    <div class="mainText" style="padding-top:75px;" id="research">
+        <span class="guest">guest</span><span class="at">@</span><span class="website">gabe-dubose.github.io:~$</span>&nbsp;<span>research</span>
+    </div>
+    <!--Research option-->
+    <div class="navoption">--</div>
+    <div class="navoption"><a href="symbiosis.html#symbiosis">How do environmental factors influence the evolution of symbiotic interactions?</a></div>
+    <div class="navoption">--</div>
+    <div class="navoption"><a href="dietGeneticsMicrobiome.html#hostMicrobiomes">How do host diet and genetics combine in shaping their microbiome compositon and structure?</a></div>
+    <div class="navoption">--</div>
+    <div class="navoption"><a href="soilEukaryoteEcology.html#soilEukaryotes">How are soil-dwelling microbial eukaryote communities structured and how do they interact with their surrounding prokaryotic communities?</a></div>
+    <div class="navoption">--</div>
+    <div class="navoption"><a href="selectionStatistics.html#selectionStatistics">Are there better ways to statistically estimate selection from population genomic data?</a></div>
+    <div class="navoption">--</div>
+    <div class="navoption"><a href="bioinformaticTools.html#bioinformaticTools">Bioinformatics tools</a></div>
 
-                <div>
-                    <a href="transition-symbiont-life.html">
-                    <p class = "text-grow" style="font-family:'Arial', Helvetica, sans-serif;
-                    font-size: 20px;
-                    margin-top: 75px;
-                    margin-left: 20%;
-                    width: 950px">
-                    <br>
-                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <strong>How do microbes transition to an endosymbiotic lifestyle?</strong><br>
-                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Transitioning from a free-living microbe to an endosymbiont can be a complex process where<br>
-                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp symbiont transmission and host-symbiont conflict greatly influences the stability and<br>
-                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp nature of the interaction.<br>
-                    <br>
-                    </p>
-                    </a>
-                </div>
-
-                <div>
-                    <a href="env-drivers-symbiont-interactions.html">
-                    <p class = "text-grow" style="font-family:'Arial', Helvetica, sans-serif;
-                    font-size: 20px;
-                    margin-top: 75px;
-                    margin-left: 20%;
-                    width: 950px">
-                    <br>
-                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <strong>How do environmental factors influence host-symbiont interactions?</strong><br>
-                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp In order for initial symbiotic interactions to presist, the host's fitness must not<br> 
-                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp be too negatively affected. Therefore, the stress a new host receives from the<br>
-                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp environment can play a role in the trajectory and outcome of new symbioses.<br>
-                    <br>
-                    </p>
-                    </a>
-                </div>
-
-        </body>
-
-    </html>
+</html>
