@@ -15,7 +15,7 @@
     color: aliceblue;
 }
 .website {
-    color: #facb6a;
+    color: #bb80b3;
 }
 
 /*Navigation Bar styling*/
@@ -38,4 +38,16 @@
 
 .navoption a:hover {
     text-decoration: underline;
+    color: #facb6a;
+}
+
+.subHeader {
+    max-width: 750px;
+    margin: auto;
+    position: relative;
+    background-color: #1a2a32;
+    color: #facb6a;
+    font-size: 18px;
+    text-decoration: none;
+    margin-top: 5px;
 }
