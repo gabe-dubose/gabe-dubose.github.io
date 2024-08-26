@@ -1,64 +1,147 @@
 <!DOCTYPE html>
 <html>
-    <title>Gabe DuBose</title>
-    <!--Import styling-->
-    <head>
-        <link rel="stylesheet" href="style.css">
-    </head>
+<head>
+<style>
+body {
+  font-family: "Roboto Mono", monospace;
+  font-size: 20px;
+  color: #2e2b2b;
+  background-color: #ffffff;
+  background-image: url('images/phylotree.png');
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 
-    <style>
-        html {
-            background-color: #1a2a32;
-            padding-bottom: 100px;
-        }
-        
-        body {
-            font-family: "Andale Mono", AndaleMono, monospace;  
-        }
+.header-text {
+  text-align: center;
+  margin-bottom: 10px; 
+}
 
-        header {
-            max-width: 750px;
-            margin: 0 auto;
-            position: relative;
-            background-color: #1a2a32;
-        }
+.header-text h1 {
+  font-size: 48px;
+  margin: 0;
+  color: #2e2b2b; 
+}
 
-    </style>
-    
-    <!--user tag-->
-    <div class="mainText" style="padding-top:75px ;">
-        <span class="guest">guest</span><span class="at">@</span><span class="website">gabe-dubose.github.io:~$</span>&nbsp;<span>about-gabe</span>
+.header-text h2 {
+  font-size: 20px;
+  margin: 0; 
+  color: #2e2b2b; 
+}
+
+.container {
+  width: 80%; 
+  max-width: 1000px; 
+  border: 2px solid #2e2b2b;
+  background-color: #ffffff;
+}
+
+.header {
+  text-align: center;
+  padding: 5px;
+  font-size: 36px;
+  background-color: white;
+  color: black;
+  border-bottom: 2px solid #2e2b2b;
+}
+
+.header img {
+  width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #dc5752;
+  border-top: 2px solid #2e2b2b;
+}
+
+li {
+  float: left;
+  border-right: 1px solid #2e2b2b;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: #2e2b2b;
+  text-align: center;
+  padding: 8px 12px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #e5aa5e;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+.new-section {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+  border-top: 2px solid #2e2b2b;
+}
+
+.new-section img {
+  width: 300px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.new-section .text {
+  flex: 1;
+}
+</style>
+</head>
+<body>
+
+<div class="header-text">
+  <h1>Gabe DuBose</h1>
+  <h2>Evolutionary Biology: from genetics to ecology</h2>
+</div>
+
+<div class="container">
+  <div class="header">
+    <img src="images/header.png" alt="Header Image">
+  </div>
+
+  <ul>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+  
+  <!-- New Section -->
+  <div class="new-section">
+    <img src="images/me.png" alt="Profile Image">
+    <div class="text">
+      <h2>General Interests</h2>
+
+      <p>My name is Gabe DuBose and I'm currently a Ph.D. student in the <b>P</b>opulation <b>B</b>iology, <b>E</b>cology, and <b>E</b>volution program at Emory University.
+      I am generally interested in how evolutionary change is facilitated and constrainted as it pertains to understanding patterns of biological diversification and complexity.
+      My current research focuses on the <b>evolution of life cycle complexity</b> and the <b>evolution of endosymbiotic interactions</b>. I like to study these topics
+      from both genetic and ecological perspectives.</p>
+
+  <p>In addition to research, I also really enjoy teaching. I have been a <b>teaching assistant for several introductory biology courses</b>,
+     as well as a <b>co-developer/co-instructor of a course on microbial ecology</b>. I hope to continue to gain teaching experience throughout my Ph.D. </p>
     </div>
-    <!--Main page body-->
-    <div class="mainText">
-        <pre id="asciiHeader" class="subHeader" style="font-family: Andale Mono, AndaleMono, monospace; font-size: 10px;">
-██████╗  █████╗ ██████╗ ███████╗    ██████╗ ██╗   ██╗██████╗  ██████╗ ███████╗███████╗ 
-██╔════╝ ██╔══██╗██╔══██╗██╔════╝    ██╔══██╗██║   ██║██╔══██╗██╔═══██╗██╔════╝██╔════╝
-██║  ███╗███████║██████╔╝█████╗      ██║  ██║██║   ██║██████╔╝██║   ██║███████╗█████╗  
-██║   ██║██╔══██║██╔══██╗██╔══╝      ██║  ██║██║   ██║██╔══██╗██║   ██║╚════██║██╔══╝  
-╚██████╔╝██║  ██║██████╔╝███████╗    ██████╔╝╚██████╔╝██████╔╝╚██████╔╝███████║███████╗
-╚═════╝ ╚═╝  ╚═╝╚═════╝ ╚══════╝    ╚═════╝  ╚═════╝ ╚═════╝  ╚═════╝ ╚══════╝╚══════╝                                                                                      
-        </pre>
-    </div>
-    <div class="mainText">--</div>
-    <div class="mainText">Hello! My name is Gabe DuBose and I am graduate student in the bioinformatics program
-        at Georgia Tech. I study various aspects of microbial ecology and evolution, with an emphasis on 
-        host-associated microbes. I also develop computational and statistical approaches to try to better address 
-        fundamental questions in evolutionary biology. 
-    </div>
+  </div>
+</div>
 
-    <!--user tag-->
-    <div class="mainText" style="padding-top:75px;">
-        <span class="guest">guest</span><span class="at">@</span><span class="website">gabe-dubose.github.io:~$</span>&nbsp;<span>navigaiton-bar</span>
-    </div>
-    <!--Navigation bar-->
-    <div class="navoption">--</div>
-    <div class="navoption"><a href="index.html">>Home</a></div>
-    <div class="navoption"><a href="research.html#research">Research</a></div>
-    <div class="navoption"><a href="cv.html#cv">Curriculum Vitae</a></div>
-    <div class="navoption"><a href="https://github.com/gabe-dubose" target="_blank">GitHub</a></div>
-    <div class="navoption"><a href="contact.html#contact">Contact</a></div>
-
+</body>
 </html>
-
-<script type="text/javascript" src="style.js"></script>

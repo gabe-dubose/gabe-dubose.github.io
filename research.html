@@ -1,55 +1,188 @@
 <!DOCTYPE html>
 <html>
-    <!--Import styling-->
-    <head>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    
-    <style>
+<head>
+<style>
+body {
+  font-family: "Roboto Mono", monospace;
+  font-size: 20px;
+  color: #2e2b2b;
+  background-color: #ffffff;
+  background-image: url('images/phylotree.png');
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 
-        html {
-            background-color: #1a2a32;
-            padding-bottom: 100px;
-        }
+.header-text {
+  text-align: center;
+  margin-bottom: 10px; 
+}
 
-        body {
-            font-family: "Andale Mono", AndaleMono, monospace;  
-        }
+.header-text h1 {
+  font-size: 48px;
+  margin: 0;
+  color: #2e2b2b; 
+}
 
-        header {
-            max-width: 750px;
-            margin: 0 auto;
-            position: relative;
-            background-color: #1a2a32;
-        }
-    </style>
-    
-    <!--user tag-->
-    <div class="mainText" style="padding-top:75px;">
-        <span class="guest">guest</span><span class="at">@</span><span class="website">gabe-dubose.github.io:~$</span>&nbsp;<span>navigaiton-bar</span>
+.header-text h2 {
+  font-size: 20px;
+  margin: 0; 
+  color: #2e2b2b; 
+}
+
+.container {
+  width: 80%; 
+  max-width: 1000px; 
+  border: 2px solid #2e2b2b;
+  background-color: #ffffff;
+}
+
+.header {
+  text-align: center;
+  padding: 0px;
+  font-size: 36px;
+  background-color: white;
+  color: black;
+  border-bottom: 2px solid #2e2b2b;
+}
+
+.header img {
+  width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #dc5752;
+  border-top: 2px solid #2e2b2b;
+}
+
+li {
+  float: left;
+  border-right: 1px solid #2e2b2b;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: #2e2b2b;
+  text-align: center;
+  padding: 8px 12px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #e5aa5e;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+.new-section {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+  border-top: 2px solid #2e2b2b;
+}
+
+.new-section img {
+  width: 300px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.new-section .text {
+  flex: 1;
+}
+</style>
+</head>
+<body>
+
+<div class="header-text">
+  <h1>Gabe DuBose</h1>
+  <h2>Evolutionary Biology: from genetics to ecology</h2>
+</div>
+
+<div class="container">
+  <div class="header">
+  </div>
+
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a class="active" href="research.html">Research</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+  
+  <!-- New Section -->
+  <div class="new-section">
+    <div class="text">
+      <h2>General interests</h2>
+
+      <p>My research interests are centered around understanding how evolutionary change is facilitated and constrained,
+      with the goal of adding to our more general understanding of patterns of biological diversification and complexity. I have
+      have approached this interest through several different topics, but I primairly focus on studying life cycle evolution and 
+      the evolution endosymbiotic interactions. I like to approach these topics from both genetic and ecological perspectives.
+      </p>
+
+      <p>While the overall goal of my research is to understand the generation of biodiversity, I 
+        believe this goal could be of little use without the conservation of said diversity. Therefore,
+        I am also interested in understanding the causes and consequences of anthropogenic environmental and ecological
+        change. Specifically, I am interested in understanding the consequences of anthropogenic environmental 
+        and ecological change on seasonal phenological dynamics.
+      </p>
+
     </div>
-    <!--Navigation bar-->
-    <div class="navoption">--</div>
-    <div class="navoption"><a href="index.html">Home</a></div>
-    <div class="navoption"><a href="research.html#research">>Research</a></div>
-    <div class="navoption"><a href="cv.html#cv">Curriculum Vitae</a></div>
-    <div class="navoption"><a href="https://github.com/gabe-dubose" target="_blank">GitHub</a></div>
-    <div class="navoption"><a href="contact.html#contact">Contact</a></div>
+  </div>
 
-    <!--user tag-->
-    <div class="mainText" style="padding-top:75px;" id="research">
-        <span class="guest">guest</span><span class="at">@</span><span class="website">gabe-dubose.github.io:~$</span>&nbsp;<span>research</span>
+  <!-- New Section -->
+  <div class="new-section">
+    <img src="images/monarch_lifecycle.png" style="width: 400px; height: auto; margin-right: 20px; margin-top: 30px;">
+    <div class="text">
+      <h2>Life cycle evolution</h2>
+
+      <p>Deeply rooted divergence
+        between lineages has often coincided with principal life cycle alterations, so its possible that
+        understanding how life cycles evolve (in both form and complexity) could lend general insight into 
+        patterns of diversification throughout natural history. My work has predominately focused on understanding
+        the genetic basis of life cycle evolution, focusing on how the various phenotypes presented by an organism
+        throughout its life cycle evolutionary diverge from each other. More recently, I have recently started studying 
+        the ecological factors that may facilitate and constrain life cycle evolution. 
+      </p>
+
     </div>
-    <!--Research option-->
-    <div class="navoption">--</div>
-    <div class="navoption"><a href="symbiosis.html#symbiosis">How do environmental factors influence the evolution of symbiotic interactions?</a></div>
-    <div class="navoption">--</div>
-    <div class="navoption"><a href="dietGeneticsMicrobiome.html#hostMicrobiomes">How do host diet and genetics combine in shaping their microbiome compositon and structure?</a></div>
-    <div class="navoption">--</div>
-    <div class="navoption"><a href="soilEukaryoteEcology.html#soilEukaryotes">How are soil-dwelling microbial eukaryote communities structured and how do they interact with their surrounding prokaryotic communities?</a></div>
-    <div class="navoption">--</div>
-    <div class="navoption"><a href="selectionStatistics.html#selectionStatistics">Are there better ways to statistically estimate selection from population genomic data?</a></div>
-    <div class="navoption">--</div>
-    <div class="navoption"><a href="bioinformaticTools.html#bioinformaticTools">Bioinformatics tools</a></div>
+  </div>
 
+<!-- New Section -->
+<div class="new-section">
+  <img src="images/amoeba.png" style="width: 400px; height: auto; margin-right: 20px; margin-top: 50px;">
+  <div class="text">
+    <h2>Evolution of endosymbioses</h2>
+
+    <p>
+      Endosymbiotic interactions have played transformative roles in the evolution of hosts from across the tree of life.
+      The most notable examples of this are mitochondria and chloroplast, but evolutionairly important endosymbioses 
+      have independently arisen across diverse taxa. Therefore, it seems that major evolutionary trajectories can be 
+      largely shaped by endosymbiotic interactions. My work has primairly focused on understanding how ecological processes
+      shape the frequency of endosymbionts that are still segregating in host populations, with the objective of understanding 
+      how the said ecological processes influence the evolutionary trajectories of endosymbiotic interacitons. 
+    </p>
+
+  </div>
+</div>
+
+</div>
+
+</body>
 </html>

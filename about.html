@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: "Roboto Mono", monospace;
+  font-size: 20px;
+  color: #2e2b2b;
+  background-color: #ffffff;
+  background-image: url('images/phylotree.png');
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-text {
+  text-align: center;
+  margin-bottom: 10px; 
+}
+
+.header-text h1 {
+  font-size: 48px;
+  margin: 0;
+  color: #2e2b2b; 
+}
+
+.header-text h2 {
+  font-size: 20px;
+  margin: 0; 
+  color: #2e2b2b; 
+}
+
+.container {
+  width: 80%; 
+  max-width: 1000px; 
+  border: 2px solid #2e2b2b;
+  background-color: #ffffff;
+}
+
+.header {
+  text-align: center;
+  padding: 0px;
+  font-size: 36px;
+  background-color: white;
+  color: black;
+  border-bottom: 2px solid #2e2b2b;
+}
+
+.header img {
+  width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #dc5752;
+  border-top: 2px solid #2e2b2b;
+}
+
+li {
+  float: left;
+  border-right: 1px solid #2e2b2b;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: #2e2b2b;
+  text-align: center;
+  padding: 8px 12px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #e5aa5e;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+.new-section {
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+  padding: 20px;
+  border-top: 2px solid #2e2b2b;
+}
+
+.new-section img {
+  width: 300px;
+  height: auto;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
+.new-section .text {
+  flex: 1;
+}
+</style>
+</head>
+<body>
+
+<div class="header-text">
+  <h1>Gabe DuBose</h1>
+  <h2>Evolutionary Biology: from genetics to ecology</h2>
+</div>
+
+<div class="container">
+  <div class="header">
+  </div>
+
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a class="active" href="about.html">About</a></li>
+  </ul>
+  
+  <!-- New Section -->
+  <div class="new-section">
+    <img src="images/us.jpg" alt="Profile Image">
+    <div class="text">
+      <h2>About me</h2>
+
+      <p>Growing up in piney woods of East Texas, I spent a lot of time in nature. This led me to pursue
+        a degree in biolgy at the University of Central Arkansas, where I started researching the 
+        interactions between social amoeba and their various bacterial endosymbionts with Dr. Tammy Haselkorn. 
+        Realizing the type of work I was interested in was computationally heavy, I then pursued a master's degree
+        in Bioinformatics at the Georgia Institute of Technology. I am currently working on my Ph.D. 
+        in Population Biology, Ecology, and Evolution at Emory University.
+      </p>
+
+      <p>Outside of research, I enjoy spending time in nature with my partner, Mackenzie, and our two Chihuahuas
+        Lady Bug (left) and Ember (right). I also really enjoy cooking, and I think if I was to pursue another career,
+        I'd probably want to try being a chef. I enjoy drawing as well.
+      </p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
